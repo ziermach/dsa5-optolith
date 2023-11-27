@@ -15,6 +15,9 @@ This module is unfinished and needs some more development.
 * Check hero background for error messages
 * Provide feedback
 
+![grafik](https://github.com/Plushtoast/dsa5-optolith/assets/44941845/b648131b-4359-458a-8a71-e7ba1506ce1d)
+
+
 ## Notes
 
 Tool searches the library for existing available abilities. It won't create any abilities!
