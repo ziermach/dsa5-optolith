@@ -1,0 +1,7 @@
+{
+    "Optolith": {
+        "hint1": "Importiere einen Optolith Charakter per JSON.",
+        "hint2": "Dieser Vorgang versucht alle Fähigkeiten und Zauber aus der Bibliothek in den Charakter zu importieren. Der Charakter wird in den Ordner Optolith importiert."        
+    },
+    "TYPES.Item.none": "Keine Fehler"
+}

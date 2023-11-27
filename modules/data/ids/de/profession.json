@@ -1,0 +1,978 @@
+{
+  "P_1": {
+    "m": "Barde",
+    "f": "Bardin"
+  },
+  "P_2": {
+    "m": "Gardist",
+    "f": "Gardistin"
+  },
+  "P_3": {
+    "m": "Gaukler",
+    "f": "Gauklerin"
+  },
+  "P_4": {
+    "m": "Gladiator",
+    "f": "Gladiatorin"
+  },
+  "P_5": {
+    "m": "Händler",
+    "f": "Händlerin"
+  },
+  "P_6": {
+    "m": "Heiler",
+    "f": "Heilerin"
+  },
+  "P_7": {
+    "m": "Höfling",
+    "f": "Höfling"
+  },
+  "P_8": {
+    "m": "Jäger",
+    "f": "Jägerin"
+  },
+  "P_9": {
+    "m": "Krieger",
+    "f": "Kriegerin"
+  },
+  "P_10": {
+    "m": "Prostituierter",
+    "f": "Prostituierte"
+  },
+  "P_11": {
+    "m": "Ritter",
+    "f": "Ritterin"
+  },
+  "P_12": {
+    "m": "Seefahrer",
+    "f": "Seefahrerin"
+  },
+  "P_13": {
+    "m": "Söldner",
+    "f": "Söldnerin"
+  },
+  "P_14": {
+    "m": "Spitzel",
+    "f": "Spitzelin"
+  },
+  "P_15": {
+    "m": "Stammeskrieger",
+    "f": "Stammeskriegerin"
+  },
+  "P_16": {
+    "m": "Streuner",
+    "f": "Streunerin"
+  },
+  "P_17": {
+    "m": "Wildnisläufer",
+    "f": "Wildnisläuferin"
+  },
+  "P_18": {
+    "m": "Zauberweber",
+    "f": "Zauberweberin"
+  },
+  "P_19": {
+    "m": "Katzenhexer",
+    "f": "Katzenhexe"
+  },
+  "P_20": {
+    "m": "Krötenhexer",
+    "f": "Krötenhexe"
+  },
+  "P_21": {
+    "m": "Rabenhexer",
+    "f": "Rabenhexe"
+  },
+  "P_22": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_23": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_24": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_25": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_26": {
+    "m": "Borongeweihter",
+    "f": "Borongeweihte"
+  },
+  "P_27": {
+    "m": "Hesindegeweihter",
+    "f": "Hesindegeweihte"
+  },
+  "P_28": {
+    "m": "Perainegeweihter",
+    "f": "Perainegeweihte"
+  },
+  "P_29": {
+    "m": "Phexgeweihter",
+    "f": "Phexgeweihte"
+  },
+  "P_30": {
+    "m": "Praiosgeweihter",
+    "f": "Praiosgeweihte"
+  },
+  "P_31": {
+    "m": "Rondrageweihter",
+    "f": "Rondrageweihte"
+  },
+  "P_32": {
+    "m": "Adersin-Schwertgeselle",
+    "f": "Adersin-Schwertgesellin"
+  },
+  "P_33": {
+    "m": "Adliger",
+    "f": "Adlige"
+  },
+  "P_34": {
+    "m": "Baburiner Krieger",
+    "f": "Baburiner Kriegerin"
+  },
+  "P_35": {
+    "m": "Balihoer Krieger",
+    "f": "Balihoer Kriegerin"
+  },
+  "P_36": {
+    "m": "Bauer",
+    "f": "Bäuerin"
+  },
+  "P_37": {
+    "m": "Dajin-Buskur",
+    "f": "Dajin-Buskur"
+  },
+  "P_38": {
+    "m": "Diener",
+    "f": "Dienerin"
+  },
+  "P_39": {
+    "m": "Elenviner Krieger",
+    "f": "Elenviner Kriegerin"
+  },
+  "P_40": {
+    "m": "Entdecker",
+    "f": "Entdeckerin"
+  },
+  "P_41": {
+    "m": "Fedorino-Schwertgeselle",
+    "f": "Fedorino-Schwertgeselle"
+  },
+  "P_42": {
+    "m": "Gelehrter",
+    "f": "Gelehrte"
+  },
+  "P_43": {
+    "m": "Hirte",
+    "f": "Hirtin"
+  },
+  "P_44": {
+    "m": "Hylailer Krieger",
+    "f": "Hylailer Kriegerin"
+  },
+  "P_45": {
+    "m": "Künstler",
+    "f": "Künstlerin"
+  },
+  "P_46": {
+    "m": "Marwan Sahib-Balayan",
+    "f": "Marwan Sahib-Balayan"
+  },
+  "P_47": {
+    "m": "Mechanikus",
+    "f": "Mechanika"
+  },
+  "P_48": {
+    "m": "Mengbiller Krieger",
+    "f": "Mengbiller Kriegerin"
+  },
+  "P_49": {
+    "m": "Premer Krieger",
+    "f": "Premer Kriegerin"
+  },
+  "P_50": {
+    "m": "Schmied",
+    "f": "Schmiedin"
+  },
+  "P_51": {
+    "m": "Sklave",
+    "f": "Sklavin"
+  },
+  "P_52": {
+    "m": "Soldat",
+    "f": "Soldatin"
+  },
+  "P_53": {
+    "m": "Tagelöhner",
+    "f": "Tagelöhner"
+  },
+  "P_54": {
+    "m": "Wildniskundiger",
+    "f": "Wildniskundige"
+  },
+  "P_55": {
+    "m": "Wirt",
+    "f": "Wirtin"
+  },
+  "P_56": {
+    "m": "Zuckerbäcker",
+    "f": "Zuckerbäckerin"
+  },
+  "P_57": "Ceoladir",
+  "P_58": "Derwisch",
+  "P_59": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_60": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_61": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_62": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_63": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_64": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_65": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_66": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_67": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_68": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_69": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_70": "Hazaqi",
+  "P_71": {
+    "m": "Magischer Taugenichts",
+    "f": "Magische Taugenicht"
+  },
+  "P_72": "Majuna",
+  "P_73": "Qabaloth der Töchter Niobaras",
+  "P_74": "Rahkisa",
+  "P_75": "Sangara",
+  "P_76": {
+    "m": "Scharlatan",
+    "f": "Scharlatanin"
+  },
+  "P_77": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_78": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_79": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_80": "Sharisad",
+  "P_81": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_82": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_83": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_84": {
+    "m": "Bogner",
+    "f": "Bognerin"
+  },
+  "P_85": {
+    "m": "Deichbauer",
+    "f": "Deichbauerin"
+  },
+  "P_86": {
+    "m": "Holzfäller",
+    "f": "Holzfällerin"
+  },
+  "P_87": {
+    "m": "Ritter der Streitenden Königreiche",
+    "f": "Ritterin der Streitenden Königreiche"
+  },
+  "P_88": {
+    "m": "Ritter der Streitenden Königreiche",
+    "f": "Ritterin der Streitenden Königreiche"
+  },
+  "P_89": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_90": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_91": {
+    "m": "Eulenhexer",
+    "f": "Eulenhexe"
+  },
+  "P_92": {
+    "m": "Schlangenhexer",
+    "f": "Schlangenhexe"
+  },
+  "P_93": {
+    "m": "Druide",
+    "f": "Druidin"
+  },
+  "P_94": {
+    "m": "Druide",
+    "f": "Druidin"
+  },
+  "P_95": {
+    "m": "Efferdgeweihter",
+    "f": "Efferdgeweihte"
+  },
+  "P_96": {
+    "m": "Traviageweihter",
+    "f": "Traviageweihte"
+  },
+  "P_97": {
+    "m": "Firungeweihter",
+    "f": "Firungeweihte"
+  },
+  "P_98": {
+    "m": "Tsageweihter",
+    "f": "Tsageweihte"
+  },
+  "P_99": {
+    "m": "Ingerimmgeweihter",
+    "f": "Ingerimmgeweihte"
+  },
+  "P_100": {
+    "m": "Rahjageweihter",
+    "f": "Rahjageweihte"
+  },
+  "P_101": {
+    "m": "Avesgeweihter",
+    "f": "Avesgeweihte"
+  },
+  "P_102": {
+    "m": "Ifirngeweihter",
+    "f": "Ifirngeweihte"
+  },
+  "P_103": {
+    "m": "Korgeweihter",
+    "f": "Korgeweihte"
+  },
+  "P_104": {
+    "m": "Nandusgeweihter",
+    "f": "Nandusgeweihte"
+  },
+  "P_105": {
+    "m": "Swafnirgeweihter",
+    "f": "Swafnirgeweihte"
+  },
+  "P_106": {
+    "m": "Amazone",
+    "f": "Amazone"
+  },
+  "P_107": {
+    "m": "Draconiter",
+    "f": "Draconiterin"
+  },
+  "P_108": {
+    "m": "Golgarit",
+    "f": "Golgaritin"
+  },
+  "P_109": {
+    "m": "Namenloser-Geweihter",
+    "f": "Namenloser-Geweihte"
+  },
+  "P_110": {
+    "m": "Distelritter",
+    "f": "Distelritterin"
+  },
+  "P_111": {
+    "m": "Heckenreiter",
+    "f": "Heckenreiterin"
+  },
+  "P_112": {
+    "m": "Küstenschmuggler",
+    "f": "Küstenschmugglerin"
+  },
+  "P_113": {
+    "m": "Havener Krieger",
+    "f": "Havener Kriegerin"
+  },
+  "P_114": {
+    "m": "Schwertgeselle nach Scanlail ni Uinin",
+    "f": "Schwertgesellin nach Scanlail ni Uinin"
+  },
+  "P_115": {
+    "m": "Seesoldat",
+    "f": "Seesoldatin"
+  },
+  "P_116": {
+    "m": "Windhager Sippenkrieger",
+    "f": "Windhager Sippenkriegerin"
+  },
+  "P_117": {
+    "m": "Winhaller Krieger",
+    "f": "Winhaller Kriegerin"
+  },
+  "P_118": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_119": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_120": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_121": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_122": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_123": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_124": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_125": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_126": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_127": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_128": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_129": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_130": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_131": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_132": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_133": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_134": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_135": {
+    "m": "Affenhexer",
+    "f": "Affenhexe"
+  },
+  "P_136": {
+    "m": "Eulenhexer",
+    "f": "Eulenhexe"
+  },
+  "P_137": {
+    "m": "Katzenhexer",
+    "f": "Katzenhexe"
+  },
+  "P_138": {
+    "m": "Krötenhexer",
+    "f": "Krötenhexe"
+  },
+  "P_139": {
+    "m": "Rabenhexer",
+    "f": "Rabenhexe"
+  },
+  "P_140": {
+    "m": "Schlangenhexer",
+    "f": "Schlangenhexe"
+  },
+  "P_141": {
+    "m": "Spinnenhexer",
+    "f": "Spinnenhexe"
+  },
+  "P_142": {
+    "m": "Bewahrer",
+    "f": "Bewahrerin"
+  },
+  "P_143": {
+    "m": "Former",
+    "f": "Formerin"
+  },
+  "P_144": {
+    "m": "Kämpfer",
+    "f": "Kämpferin"
+  },
+  "P_145": {
+    "m": "Legendensänger",
+    "f": "Legendensängerin"
+  },
+  "P_146": {
+    "m": "Schelm",
+    "f": "Schelmin"
+  },
+  "P_147": {
+    "m": "Zauberalchimist",
+    "f": "Zauberalchimistin"
+  },
+  "P_148": {
+    "m": "Wildnisläufer",
+    "f": "Wildnisläuferin"
+  },
+  "P_149": {
+    "m": "Zauberweber",
+    "f": "Zauberweberin"
+  },
+  "P_150": "Apothekarius",
+  "P_151": {
+    "m": "Auftragsmörder",
+    "f": "Auftragsmörderin"
+  },
+  "P_152": {
+    "m": "Bader",
+    "f": "Baderin"
+  },
+  "P_153": {
+    "m": "Bote",
+    "f": "Botin"
+  },
+  "P_154": {
+    "m": "Fallensteller",
+    "f": "Fallenstellerin"
+  },
+  "P_155": {
+    "m": "Fleischer",
+    "f": "Fleischerin"
+  },
+  "P_156": {
+    "m": "Garether Krieger",
+    "f": "Garether Kriegerin"
+  },
+  "P_157": {
+    "m": "Herrscher",
+    "f": "Herrscherin"
+  },
+  "P_158": {
+    "m": "Holzfäller",
+    "f": "Holzfällerin"
+  },
+  "P_159": "Ishannah al'Kira-Balayan",
+  "P_160": {
+    "m": "Karawanenführer",
+    "f": "Karawanenführerin"
+  },
+  "P_161": {
+    "m": "Kontorist",
+    "f": "Kontoristin"
+  },
+  "P_162": {
+    "m": "Landwehrsoldat",
+    "f": "Landwehrsoldatin"
+  },
+  "P_163": "Lanisto",
+  "P_164": "Logenmitglied",
+  "P_165": "Mawdli",
+  "P_166": {
+    "m": "Albernischer Seefahrer",
+    "f": "Albernische Seefahrerin"
+  },
+  "P_167": {
+    "m": "Küstenschmuggler aus Havena",
+    "f": "Küstenschmugglerin aus Havena"
+  },
+  "P_168": {
+    "m": "Schatzsucher der Siebenwindküste",
+    "f": "Schatzsucherin der Siebenwindküste"
+  },
+  "P_169": {
+    "m": "Efferdgeweihter der Siebwindküste",
+    "f": "Efferdgeweihte der Siebwindküste"
+  },
+  "P_170": {
+    "m": "Numinorupriester",
+    "f": "Numinorupriesterin"
+  },
+  "P_171": {
+    "m": "Metessa Galora-Schwertgeselle",
+    "f": "Metessa Galora-Schwertgesellin"
+  },
+  "P_172": {
+    "m": "Neersander Krieger",
+    "f": "Neersander Kriegerin"
+  },
+  "P_173": {
+    "m": "Patrizier",
+    "f": "Patrizierin"
+  },
+  "P_174": {
+    "m": "Prospektor",
+    "f": "Prospektorin"
+  },
+  "P_175": {
+    "m": "Räuber",
+    "f": "Räuberin"
+  },
+  "P_176": {
+    "m": "Rommilyser Krieger",
+    "f": "Rommilyser Kriegerin"
+  },
+  "P_177": {
+    "m": "Sappeur",
+    "f": "Sappeurin"
+  },
+  "P_178": {
+    "m": "Sarvinio della Monte-Schwertgeselle",
+    "f": "Sarvinio della Monte-Schwertgesellin"
+  },
+  "P_179": {
+    "m": "Scanlail ui Uinin-Schwertgeselle",
+    "f": "Scanlail ui Uinin-Schwertgesellin"
+  },
+  "P_180": {
+    "m": "Schankbursche",
+    "f": "Schankmagd"
+  },
+  "P_181": {
+    "m": "Schaukämpfer",
+    "f": "Schaukämpferin"
+  },
+  "P_182": {
+    "m": "Schauspieler",
+    "f": "Schauspielerin"
+  },
+  "P_183": {
+    "m": "Schmuggler",
+    "f": "Schmugglerin"
+  },
+  "P_184": {
+    "m": "Schreiber",
+    "f": "Schreiberin"
+  },
+  "P_185": {
+    "m": "Schriftsteller",
+    "f": "Schriftstellerin"
+  },
+  "P_186": {
+    "m": "Seekrieger",
+    "f": "Seekriegerin"
+  },
+  "P_187": {
+    "m": "Stutzer",
+    "f": "Stutzerin"
+  },
+  "P_188": {
+    "m": "Tannhaus-Schwertgeselle",
+    "f": "Tannhaus-Schwertgesellin"
+  },
+  "P_189": {
+    "m": "Taschendieb",
+    "f": "Taschendiebin"
+  },
+  "P_190": {
+    "m": "Tätowierer",
+    "f": "Tätowiererin"
+  },
+  "P_191": {
+    "m": "Thorwaler Krieger",
+    "f": "Thorwaler Kriegerin"
+  },
+  "P_192": {
+    "m": "Viehtreiber",
+    "f": "Viehtreiberin"
+  },
+  "P_193": {
+    "m": "Vinsalter Krieger",
+    "f": "Vinsalter Kriegerin"
+  },
+  "P_194": {
+    "m": "Winhaller Krieger",
+    "f": "Winhaller Kriegerin"
+  },
+  "P_195": {
+    "m": "Zimmermann",
+    "f": "Zimmerfrau"
+  },
+  "P_196": {
+    "m": "Kammerdiener (Zofe)",
+    "f": "Zofe"
+  },
+  "P_197": {
+    "m": "Zwergenkrieger nach Hardas",
+    "f": "Zwergenkriegerin nach Hardas"
+  },
+  "P_198": {
+    "m": "Ritter der Streitenden Königreiche",
+    "f": "Ritterin der Streitenden Königreiche"
+  },
+  "P_199": {
+    "m": "Ritter der Streitenden Königreiche",
+    "f": "Ritterin der Streitenden Königreiche"
+  },
+  "P_200": {
+    "m": "Druide",
+    "f": "Druidin"
+  },
+  "P_201": {
+    "m": "Druide",
+    "f": "Druidin"
+  },
+  "P_202": {
+    "m": "Distelritter",
+    "f": "Distelritterin"
+  },
+  "P_203": {
+    "m": "Havener Krieger",
+    "f": "Havener Kriegerin"
+  },
+  "P_204": {
+    "m": "Seesoldat",
+    "f": "Seesoldatin"
+  },
+  "P_205": {
+    "m": "Windhager Sippenkrieger",
+    "f": "Windhager Sippenkriegerin"
+  },
+  "P_206": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_207": {
+    "m": "Erotikkünstler",
+    "f": "Erotikkünstlerin"
+  },
+  "P_210": {
+    "m": "Prostituierter",
+    "f": "Prostituierte"
+  },
+  "P_211": {
+    "m": "Sexualmagier",
+    "f": "Sexualmagierin"
+  },
+  "P_212": {
+    "m": "Tsatuara-Anhänger",
+    "f": "Tsatuara-Anhängerin"
+  },
+  "P_213": {
+    "m": "Levthanpriester",
+    "f": "Levthanpriesterin"
+  },
+  "P_214": {
+    "m": "Rahjageweihter",
+    "f": "Rahjageweihte"
+  },
+  "P_215": {
+    "m": "Rahjasutra-Meister",
+    "f": "Rahjasutra-Meisterin"
+  },
+  "P_216": {
+    "m": "Säbeltänzer",
+    "f": "Säbeltänzerin"
+  },
+  "P_217": "Anach-Nûr",
+  "P_218": "Durro-Dûn",
+  "P_219": "Hadan-Harigasta",
+  "P_220": "Mudran'Nura",
+  "P_221": "Nipakau-Kocan",
+  "P_222": "Nuan",
+  "P_223": {
+    "m": "Haindruide",
+    "f": "Haindruidin"
+  },
+  "P_224": {
+    "m": "Hüter der Kraft",
+    "f": "Hüterin der Kraft"
+  },
+  "P_225": {
+    "m": "Konzildruide",
+    "f": "Konzildruidin"
+  },
+  "P_226": {
+    "m": "Mehrer der Macht",
+    "f": "Mehrerin der Macht"
+  },
+  "P_227": {
+    "m": "Sumudiener",
+    "f": "Sumudienerin"
+  },
+  "P_228": {
+    "m": "Diener der Erdmutter",
+    "f": "Dienerin der Erdmutter"
+  },
+  "P_229": {
+    "m": "Herr der Erde",
+    "f": "Herrin der Erde"
+  },
+  "P_230": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_231": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_232": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_233": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_234": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_235": {
+    "m": "Qabaloth der Nachtwinde",
+    "f": "Qabalothin der Nachtwinde"
+  },
+  "P_236": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_237": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_238": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_239": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_240": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_241": {
+    "m": "Graumagier",
+    "f": "Graumagierin"
+  },
+  "P_242": {
+    "m": "Rashduler Dämonologe",
+    "f": "Rashduler Dämonologin"
+  },
+  "P_243": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_244": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_245": {
+    "m": "Schwarzmagier",
+    "f": "Schwarzmagierin"
+  },
+  "P_246": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_247": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_248": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  },
+  "P_249": "Zibilja",
+  "P_250": {
+    "m": "Brobim-Geode",
+    "f": "Brobim-Geodin"
+  },
+  "P_251": {
+    "m": "Gildenloser Magier",
+    "f": "Gildenlose Magierin"
+  },
+  "P_252": {
+    "m": "Ferdoker Lanzer",
+    "f": "Ferdoker Lanzerin"
+  },
+  "P_253": {
+    "m": "Elenviner Krieger",
+    "f": "Elenviner Kriegerin"
+  },
+  "P_254": {
+    "m": "Klippag-Schwertgeselle",
+    "f": "Klippag-Schwertgesellin"
+  },
+  "P_255": {
+    "m": "Koscher Almgreve",
+    "f": "Koscher Almgrevin"
+  },
+  "P_256": {
+    "m": "Mechanikus",
+    "f": "Mechanika"
+  },
+  "P_257": {
+    "m": "Rechtsgelehrter",
+    "f": "Rechtsgelehrte"
+  },
+  "P_258": {
+    "m": "Wandergeselle",
+    "f": "Wandergesellin"
+  },
+  "P_259": {
+    "m": "Xorloscher Drachenkämpfer",
+    "f": "Xorloscher Drachenkämpferin"
+  },
+  "P_260": {
+    "m": "Gratenfelser Haindruide",
+    "f": "Gratenfelser Haindruidin"
+  },
+  "P_261": {
+    "m": "Weißmagier",
+    "f": "Weißmagierin"
+  }
+}
