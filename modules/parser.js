@@ -1,4 +1,6 @@
 export default class OptolithParser extends Application {
+    //TODO species
+
     constructor(json) {
         super()
         this.json = json
@@ -12,17 +14,15 @@ export default class OptolithParser extends Application {
         return (await (await fetch(`./modules/dsa5-optolith/modules/data/ids/${game.i18n.lang}/${file}.json`)).json())
     }
 
-    async parse() {     
-
+    async parse() {
         const folder = await game.dsa5.apps.DSA5_Utility.getFolderForType("Actor", null, "Optolith")
-
         const errors = {}
-
-        const species = await this.singleFetch("species", this.json.r)
-        const culture = await this.singleFetch("culture", this.json.c)
-        const career = (await this.singleFetch("profession", this.json.p))[this.json.sex]
-        const talents = await this.allFetch("skill")
-        const combatskills = await this.allFetch("combatskill")
+        const oData = await this.allFetch("odata")
+        const species =  oData["species"][this.json.r]
+        const culture = oData["culture"][this.json.c]
+        const career = oData["profession"][this.json.p][this.json.sex] || oData["profession"][this.json.p]
+        const talents = oData["skill"]
+        const combatskills = oData["combatskill"]
 
         const actor = {
             name: this.json.name,
@@ -51,7 +51,12 @@ export default class OptolithParser extends Application {
                     career: { value: career},
                     home: {value: this.json.pers?.placeofbirth || ""},
                     family: {value: this.json.pers?.family || ""},
-                    
+                    haircolor: { value: oData["haircolor"][this.json.pers?.haircolor] || ""},
+                    eyecolor: { value: oData["eyecolor"][this.json.pers?.eyecolor] || ""},
+                    socialstate : { value: oData["socialstatus"][this.json.pers?.socialstatus] || ""},
+                    height: { value: this.json.pers?.height || ""},
+                    weight: { value: this.json.pers?.weight || ""},
+                    distinguishingmark: { value: this.json.pers?.characteristics || ""},                    
                     experience: {
                         total: this.json.ap?.total || 0,                        
                     }
@@ -65,7 +70,7 @@ export default class OptolithParser extends Application {
             actor.system.characteristics[attrs[id]] = { advances: attr.value - 8 }
         }
         
-        const createdActor = await game.dsa5.entities.Actordsa5.create(actor)
+        const createdActor = await game.dsa5.entities.Actordsa5.create(actor, { render: false })
 
         const itemUpdates = []
         for(let [id, value] of Object.entries(this.json.talents)) {
@@ -108,8 +113,8 @@ export default class OptolithParser extends Application {
         await game.dsa5.itemLibrary.buildEquipmentIndex()
 
         if(this.json.spells != {}) {
-            const spells = await this.allFetch("spell")
-            const rituals = await this.allFetch("ritual")
+            const spells = oData["spell"]
+            const rituals = oData["ritual"]
 
             for(let [id, value] of Object.entries(this.json.spells)) {
                 let spell = spells[id]
@@ -144,7 +149,7 @@ export default class OptolithParser extends Application {
         }
 
         if(this.json.liturgies != {}) {
-            const spells = await this.allFetch("liturgy")
+            const spells = oData["liturgy"]
 
             for(let [id, value] of Object.entries(this.json.liturgies)) {
                 let spell = spells[id]
@@ -177,7 +182,7 @@ export default class OptolithParser extends Application {
         }
 
         if(this.json.cantrips.length) {
-            const spells = await this.allFetch("magictrick")
+            const spells = oData["magictrick"]
 
             for(let id of this.json.cantrips) {
                 let spell = spells[id]
@@ -204,7 +209,7 @@ export default class OptolithParser extends Application {
             }
         }
         if(this.json.blessings.length) {
-            const spells = await this.allFetch("blessing")
+            const spells = oData["blessing"]
 
             for(let id of this.json.blessings) {
                 let spell = spells[id]
@@ -234,9 +239,9 @@ export default class OptolithParser extends Application {
         if(this.json.activatable != {}) {
             
             const source = {
-                advantage: await this.allFetch("advantage"),
-                disadvantage: await this.allFetch("disadvantage"),
-                specialability: await this.allFetch("specialability")
+                advantage: oData["advantage"],
+                disadvantage: oData["disadvantage"],
+                specialability: oData["specialability"]
             }
 
             for(let [id, value] of Object.entries(this.json.activatable)) {
@@ -249,8 +254,9 @@ export default class OptolithParser extends Application {
 
                         if(val.sid) {
                             if(/^[0-9]+$/.test(val.sid)) {
-                                searchId = `${id}_${val.sid}`
-                            } else {
+                                searchId = `${id}_${val.sid}`                                
+                            } 
+                            else if(!(/^(LITURGY|SPELL)_\d+$/.test(val.sid))){
                                 nameAdd = talents[val.sid] || combatskills[val.sid] || val.sid
                             }
                         }
@@ -388,6 +394,13 @@ export default class OptolithParser extends Application {
                         new OptolithParser(json).parse()
                     })                  
                    
+                }
+              },
+              optolith: {
+                icon: '<i class="fas fa-download"></i>',
+                label: "Get Optolith",
+                callback: () => {
+                    window.open("https://optolith.app/")
                 }
               },
               no: {
