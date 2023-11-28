@@ -1,5 +1,9 @@
 # The Dark Eye 5th Ed. - Optolith Connector
 
+## Foundry VTT
+
+This is a module for the system <a href="https://foundryvtt.com/packages/dsa5">"The Dark Eye/Das Schwarze Auge"</a> in the VTT <a target="_blank" href="https://foundryvtt.com/">Foundry-VTT</a>.
+
 ## Installation
 
 Use the module manifest url 'https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/master/module.json'
