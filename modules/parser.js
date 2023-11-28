@@ -20,7 +20,7 @@ export default class OptolithParser extends Application {
         const oData = await this.allFetch("odata")
         const species =  oData["species"][this.json.r]
         const culture = oData["culture"][this.json.c]
-        const career = oData["profession"][this.json.p][this.json.sex] || oData["profession"][this.json.p]
+        const career = this.json.sex in oData["profession"][this.json.p] ? oData["profession"][this.json.p][this.json.sex] : oData["profession"][this.json.p]
         const talents = oData["skill"]
         const combatskills = oData["combatskill"]
 

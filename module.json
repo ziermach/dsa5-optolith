@@ -4,7 +4,7 @@
     "version": "5.2.0",
     "url": "https://github.com/Plushtoast/dsa5-optolith",
     "manifest": "https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/master/module.json",
-    "download": "https://github.com/Plushtoast/dsa5-optolith/archive/master.zip",
+    "download": "https://github.com/Plushtoast/dsa5-optolith/releases/download/5.2.0/dsa5_introduction-5.2.0.zip",
     "languages": [{
             "lang": "de",
             "name": "Deutsch",
