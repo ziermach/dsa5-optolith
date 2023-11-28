@@ -6,7 +6,7 @@ This is a module for the system <a href="https://foundryvtt.com/packages/dsa5">"
 
 ## Installation
 
-Use the module manifest url 'https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/master/module.json'
+Use the module manifest url 'https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/main/module.json'
 
 ## How To
 
