@@ -4,6 +4,8 @@
 
 This is a module for the system <a href="https://foundryvtt.com/packages/dsa5">"The Dark Eye/Das Schwarze Auge"</a> in the VTT <a target="_blank" href="https://foundryvtt.com/">Foundry-VTT</a>.
 
+Keep in mind, that the official <a href="https://www.f-shop.de/virtual-tabletops/das-schwarze-auge-vtt/regel-module/2157/dsa5-grundregelwerk-fuer-foundry-vtt" target="_blank">core rules module</a> for Foundry VTT already has a build in character generator!
+
 ## Installation
 
 Use the module manifest url 
