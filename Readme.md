@@ -10,9 +10,9 @@ Keep in mind, that the official <a href="https://www.f-shop.de/virtual-tabletops
 
 Use the module manifest url 
 
-´´´
-'https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/main/module.json'
-´´´
+```
+https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/main/module.json
+```
 
 ## How To
 
