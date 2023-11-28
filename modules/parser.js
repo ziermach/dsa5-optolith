@@ -64,6 +64,35 @@ export default class OptolithParser extends Application {
             }
         }
 
+        const speciesItem = (await game.dsa5.itemLibrary.findCompendiumItem(species, "species"))
+            .find(x => x.type == "species")
+
+        if(speciesItem) {
+            mergeObject(actor, {
+                system: {
+                    status: {
+                        wounds: {
+                            initial: speciesItem.system.baseValues.wounds.value
+                        },
+                        soulpower: {
+                            initial: speciesItem.system.baseValues.soulpower.value
+                        },
+                        toughness: {
+                            initial: speciesItem.system.baseValues.toughness.value
+                        },
+                        speed: {
+                            initial: speciesItem.system.baseValues.speed.value
+                        }
+                    }
+                }
+            })
+        } else {
+            if(!errors["species"])
+                errors["species"] = []
+
+            errors["species"].push(`${species} not found in library. Please add it manually.`)
+        }
+
         const attrs = ["mu", "kl", "in", "ch", "ff", "ge", "ko", "kk"]
         for(let attr of this.json.attr.values) {
             const id  = Number(attr.id.split("_")[1]) - 1
