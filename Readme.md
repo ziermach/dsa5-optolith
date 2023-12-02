@@ -8,7 +8,7 @@ Keep in mind, that the official <a href="https://www.f-shop.de/virtual-tabletops
 
 ## Installation
 
-Use the module manifest url 
+Use the module manifest url
 
 ```
 https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/main/module.json
@@ -26,10 +26,7 @@ https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/main/module.json
 
 ![grafik](https://github.com/Plushtoast/dsa5-optolith/assets/44941845/b648131b-4359-458a-8a71-e7ba1506ce1d)
 
-
 ## Notes
 
 This tool searches the library for existing available abilities. It won't create any new abilities!
 Name matchings for detection will be adjusted to offical Foundry TDE modules (in progress).
-
-

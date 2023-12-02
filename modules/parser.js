@@ -351,13 +351,27 @@ export default class OptolithParser extends Application {
                 2: "rangeweapon",
                 3: "ammunition",
                 4: "armor",
-                21: "poison",
                 20: "consumable",
+                21: "poison",                
                 22: "plant"
             }[item.gr] || "equipment"
 
-            const find = (await game.dsa5.itemLibrary.findCompendiumItem(item.name, type))
-                .find(x => x.type == type)
+            let find 
+
+            if(item.isTemplateLocked) {                
+                let baseName = oData["equipment"][item.template]
+
+                if(baseName) {
+                    find = (await game.dsa5.itemLibrary.findCompendiumItem(baseName, type))
+                        .find(x => x.type == type)
+                } else {
+                    find = (await game.dsa5.itemLibrary.findCompendiumItem(item.name, type))
+                        .find(x => x.type == type)
+                }                
+            } else {
+                find = (await game.dsa5.itemLibrary.findCompendiumItem(item.name, type))
+                   .find(x => x.type == type)
+            }
 
             if(find) {
                 const obj = find.toObject()
