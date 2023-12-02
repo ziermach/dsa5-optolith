@@ -109,7 +109,7 @@ export default class OptolithParser extends Application {
             actor.system.characteristics[attrs[id]] = { advances: attr.value - 8 }
         }
         
-        const createdActor = await game.dsa5.entities.Actordsa5.create(actor, { render: false })
+        const createdActor = await game.dsa5.entities.Actordsa5.create(actor)
 
         const itemUpdates = []
         for(let [id, value] of Object.entries(this.json.talents)) {
