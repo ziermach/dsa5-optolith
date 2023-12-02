@@ -1,7 +1,8 @@
 {
     "Optolith": {
         "hint1": "Importiere einen Optolith Charakter per JSON.",
-        "hint2": "Dieser Vorgang versucht alle Fähigkeiten und Zauber aus der Bibliothek in den Charakter zu importieren. Der Charakter wird in den Ordner Optolith importiert. Es werden keine Fähigkeiten oder Gegenstände neu erstellt."        
+        "hint2": "Dieser Vorgang versucht alle Fähigkeiten und Zauber aus der Bibliothek in den Charakter zu importieren. Der Charakter wird in den Ordner Optolith importiert. Es werden keine Fähigkeiten oder Gegenstände neu erstellt.",
+        "notFound": "{type} <b>{name}</b> nicht gefunden. Bitte manuel hinzufügen"
     },
     "TYPES.Item.none": "Keine Fehler"
 }

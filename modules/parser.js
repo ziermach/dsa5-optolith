@@ -14,6 +14,16 @@ export default class OptolithParser extends Application {
         return (await (await fetch(`./modules/dsa5-optolith/modules/data/ids/${game.i18n.lang}/${file}.json`)).json())
     }
 
+    pushError(errors, type, id) {
+        if(!errors[type])
+            errors[type] = []
+
+        errors[type].push(game.i18n.format('Optolith.notFound', {
+            type: game.i18n.localize(`TYPES.Item.${type}`),
+            name: id
+        }))
+    }
+
     async parse() {
         const folder = await game.dsa5.apps.DSA5_Utility.getFolderForType("Actor", null, "Optolith")
         const errors = {}
@@ -90,10 +100,7 @@ export default class OptolithParser extends Application {
                 }
             })
         } else {
-            if(!errors["species"])
-                errors["species"] = []
-
-            errors["species"].push(`${species} not found in library. Please add it manually.`)
+            this.pushError(errors, "species", species)
         }
 
         const attrs = ["mu", "kl", "in", "ch", "ff", "ge", "ko", "kk"]
@@ -116,10 +123,7 @@ export default class OptolithParser extends Application {
                     }
                 })
             } else {
-                if(!errors["skill"])
-                    errors["skill"] = []
-
-                errors["skill"].push(`${talents[id]} (${id}: ${value}) not found`)
+                this.pushError(errors, "skill", `${talents[id]} (${id}: ${value})`)
             }
         }
         for(let [id, value] of Object.entries(this.json.ct)) {
@@ -133,10 +137,7 @@ export default class OptolithParser extends Application {
                     }
                 })
             } else {
-                if(!errors["combatskill"])
-                    errors["combatskill"] = []
-
-                errors["combatskill"].push(`${combatskills[id]} (${id}: ${value}) not found`)
+                this.pushError(errors, "combatskill", `${combatskills[id]} (${id}: ${value})`)
             }
         }
 
@@ -158,24 +159,22 @@ export default class OptolithParser extends Application {
                 }
 
                 if(spell) {
-                    const find = (await game.dsa5.itemLibrary.findCompendiumItem(spell, isSpell))
+                    let find = (await game.dsa5.itemLibrary.findCompendiumItem(spell, isSpell))
                         .find(x => x.type == (isSpell))
+                    
+                    if(!find) 
+                        find = (await game.dsa5.itemLibrary.findCompendiumItem(spell, "ritual"))
+                            .find(x => x.type == "ritual")
 
                     if(find) {
                         const obj = find.toObject()
                         obj.system.talentValue.value = value
                         itemCreations.push(obj)
                     }else {
-                        if(!errors[isSpell])
-                            errors[isSpell] = []
-
-                        errors[isSpell].push(`${spell} not found in library. Please add it manually.`)
+                        this.pushError(errors, isSpell, spell)
                     }                    
                 } else {
-                    if(!errors["spell"])
-                        errors["spell"] = []
-
-                    errors["spell"].push(`${id}: ${value} not found`)
+                    this.pushError(errors, "spell", `${id}: ${value}`)
                 }
             }
         }
@@ -199,16 +198,10 @@ export default class OptolithParser extends Application {
                         obj.system.talentValue.value = value
                         itemCreations.push(obj)
                     }else {
-                        if(!errors["liturgy"])
-                            errors["liturgy"] = []
-
-                        errors["liturgy"].push(`${spell} not found in library. Please add it manually.`)
+                        this.pushError(errors, "liturgy", spell)
                     }                    
                 } else {
-                    if(!errors["liturgy"])
-                        errors["liturgy"] = []
-
-                    errors["liturgy"].push(`${id}: ${value} not found`)
+                    this.pushError(errors, "liturgy", `${id}: ${value}`)
                 }
             }
         }
@@ -227,16 +220,10 @@ export default class OptolithParser extends Application {
                         const obj = find.toObject()
                         itemCreations.push(obj)
                     }else {
-                        if(!errors["magictrick"])
-                            errors["magictrick"] = []
-
-                        errors["magictrick"].push(`${spell} not found in library. Please add it manually.`)
+                        this.pushError(errors, "magictrick", spell)
                     }                    
                 } else {
-                    if(!errors["magictrick"])
-                        errors["magictrick"] = []
-
-                    errors["magictrick"].push(`${id} not found`)
+                    this.pushError(errors, "magictrick", id)
                 }
             }
         }
@@ -254,16 +241,10 @@ export default class OptolithParser extends Application {
                         const obj = find.toObject()
                         itemCreations.push(obj)
                     }else {
-                        if(!errors["blessing"])
-                            errors["blessing"] = []
-
-                        errors["blessing"].push(`${spell} not found in library. Please add it manually.`)
+                        this.pushError(errors, "blessing", spell)
                     }                    
                 } else {
-                    if(!errors["blessing"])
-                        errors["blessing"] = []
-
-                    errors["blessing"].push(`${id} not found`)                    
+                    this.pushError(errors, "blessing", id)
                 }
             }
         }
@@ -293,6 +274,26 @@ export default class OptolithParser extends Application {
                             }
                         }
 
+                        if(["SA_663", "SA_414"].includes(id)) {
+                            const type = id == "SA_663" ? "liturgyenhancements" : "spellenhancements"
+                            const enhancement = oData[type][val.sid]
+
+                            if(enhancement) {
+                                const find = (await game.dsa5.itemLibrary.findCompendiumItem(enhancement, "spellextension"))
+                                    .find(x => x.type == "spellextension")
+
+                                if(find) {
+                                    const obj = find.toObject()
+                                    itemCreations.push(obj)
+                                }else {
+                                    this.pushError(errors, "spellextension", enhancement)
+                                }
+                            } else {
+
+                            }
+                            continue
+                        }
+
                         let ability = source[type][searchId]
 
                         if(ability) {
@@ -316,24 +317,15 @@ export default class OptolithParser extends Application {
 
                                 itemCreations.push(obj)
                             }else {
-                                if(!errors[type])
-                                    errors[type] = []
-
-                                errors[type].push(`${ability} not found in library. Please add it manually.`)
+                                this.pushError(errors, type, ability)
                             }
                             
                         } else {                     
-                            if(!errors[type])
-                                errors[type] = []
-
-                            errors[type].push(`${id}: ${val} not found`)
+                            this.pushError(errors, type, `${id}: ${JSON.stringify(val)}`)
                         }
                     }
                 } else {
-                    if(!errors["specialability"])
-                        errors["specialability"] = []
-
-                    errors["specialability"].push(`${id}: ${value} not found`)                
+                    this.pushError(errors, "specialability", `${id}: ${JSON.stringify(value)}`)
                 }
             }
         }
@@ -360,7 +352,8 @@ export default class OptolithParser extends Application {
                 3: "ammunition",
                 4: "armor",
                 21: "poison",
-                20: "consumable"
+                20: "consumable",
+                22: "plant"
             }[item.gr] || "equipment"
 
             const find = (await game.dsa5.itemLibrary.findCompendiumItem(item.name, type))
@@ -371,10 +364,7 @@ export default class OptolithParser extends Application {
                 obj.system.quantity.value = item.amount
                 itemCreations.push(obj)
             }else {
-                if(!errors[type])
-                    errors[type] = []
-
-                errors[type].push(`${item.name} not found in library. Please add it manually.`)
+                this.pushError(errors, type, item.name)
             }
         }
 

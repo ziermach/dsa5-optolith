@@ -1,7 +1,8 @@
 {
     "Optolith": {
         "hint1": "Import a Optolith character via JSON.",
-        "hint2": "This process tries to import all abilities and spells from the library into the character. The character is imported into the Optolith folder."
+        "hint2": "This process tries to import all abilities and spells from the library into the character. The character is imported into the Optolith folder.",
+        "notFound": "{type} <b>{name}</b> not found. Please add manually"
     },
     "TYPES.Item.none": "No errors"
 }
