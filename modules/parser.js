@@ -1,3 +1,5 @@
+const { mergeObject, getProperty } = foundry.utils
+
 export default class OptolithParser extends Application {
     //TODO species
 
