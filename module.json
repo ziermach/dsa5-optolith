@@ -4,7 +4,7 @@
     "version": "6.0.2",
     "url": "https://github.com/ziermach/dsa5-optolith",
     "manifest": "https://raw.githubusercontent.com/ziermach/dsa5-optolith/main/module.json",
-    "download": "https://github.com/ziermach/dsa5-optolith/releases/download/6.0.1/dsa5-optolith-6.0.1.zip",
+    "download": "https://github.com/ziermach/dsa5-optolith/archive/refs/tags/6.0.2.zip",
     "languages": [{
             "lang": "de",
             "name": "Deutsch",
