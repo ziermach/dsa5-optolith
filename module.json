@@ -1,10 +1,10 @@
 {
     "title": "The Dark Eye 5th Ed. - Optolith Connector",
     "description": "Import heros created with the famous <a href=\"https://optolith.app\" target=\"_blank\">Optolith</a> character generator into Foundry VTT.",
-    "version": "6.0.1",
-    "url": "https://github.com/Plushtoast/dsa5-optolith",
-    "manifest": "https://raw.githubusercontent.com/Plushtoast/dsa5-optolith/main/module.json",
-    "download": "https://github.com/Plushtoast/dsa5-optolith/releases/download/6.0.1/dsa5-optolith-6.0.1.zip",
+    "version": "6.0.2",
+    "url": "https://github.com/ziermach/dsa5-optolith",
+    "manifest": "https://raw.githubusercontent.com/ziermach/dsa5-optolith/main/module.json",
+    "download": "https://github.com/ziermach/dsa5-optolith/releases/download/6.0.2/dsa5-optolith-6.0.2.zip",
     "languages": [{
             "lang": "de",
             "name": "Deutsch",
