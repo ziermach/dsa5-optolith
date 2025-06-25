@@ -415,7 +415,7 @@ export default class OptolithParser extends Application {
     static async openDialog() {
         new Dialog({
             title: `Import Data: Optolith`,
-            content: await renderTemplate("templates/apps/import-data.html", {
+            content: await renderTemplate("templates/apps/import-data.hbs", {
               hint1: game.i18n.format("Optolith.hint1", {document: "Optolith"}),
               hint2: game.i18n.format("Optolith.hint2", {name: "Optolith"})
             }),
